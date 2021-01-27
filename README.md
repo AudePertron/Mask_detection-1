@@ -1,5 +1,8 @@
 # Mask_detection
 
+## Contexte du projet
+
+Avec la pandémie COVID-19, dans pas mal de pays le port de masques est devenu obligatoire pour se protéger contre ce virus mortel. Dans ce projet, vous alllez développer un modèle IA - Détecteur de masque sur les images en premier temps puis en temps réel avec Python.
 
 
 
