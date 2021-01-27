@@ -12,7 +12,7 @@ Le dataset initial est `Dataset_masks`, composé de plusieurs sous-dossier, `tra
 ## Description de l'architecture du modèle
 
 Les données passent d'abord par une normalisation puis passent trois fois de suite par une couche de Conv2D et une couche de maxpooling. Enfin, nous leur appliquons un Flatten pour les remettre à plat et deux couches Dense (ReLu puis sigmoid) pour récupérer le bon format de sortie (un booléen : 0 ou 1). Pour la compilation du modèle, étant donné que nous sommes dans un problème de classification binaire (0 ou 1), nous avons choisi une validation croisé binaire (`binary_crossentrop`) avec l'optimiseur `RMSprop`.
-Nous obtenons une précision de 92%.
+Nous obtenons une **précision de 92%**.
 
 
 ## Conclusion
