@@ -7,13 +7,9 @@ Avec la pandémie COVID-19, dans pas mal de pays le port de masques est devenu o
 
 
 
-
-
-
-
 ##Description de l'architecture
-les données passent d'abord par une normalisation puis passent trois fois de suite par une couche de Conv2D et une couche de maxpooling. Enfin, nous leur appliquons un Flatten pour les remettre à plat et deux dense (ReLu puis sigmoid) pour récupérer le bon format de sortie (un booléen 0 ou 1)
-
+les données passent d'abord par une normalisation puis passent trois fois de suite par une couche de Conv2D et une couche de maxpooling. Enfin, nous leur appliquons un Flatten pour les remettre à plat et deux dense (ReLu puis sigmoid) pour récupérer le bon format de sortie (un booléen 0 ou 1).
+Puis au moment de le compiler nous avons utilisé la 'binary_crossentropy' qui a en général de meilleurs résultats lorsque les prédictions sont binaires.
 
 
 ##Conclusion
